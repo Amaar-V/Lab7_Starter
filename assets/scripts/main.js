@@ -48,8 +48,8 @@ function initializeServiceWorker() {
   const registerServiceWorker = async () => {
     if ("serviceWorker" in navigator) {
       try {
-        const registration = await navigator.serviceWorker.register("/sw.js", {
-          scope: "/",
+        const registration = await navigator.serviceWorker.register("./sw.js", {
+          scope: "./",
         });
         if (registration.active) {
           console.log("Registration Successful");
