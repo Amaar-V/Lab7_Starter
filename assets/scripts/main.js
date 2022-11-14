@@ -59,7 +59,6 @@ function initializeServiceWorker() {
       }
     }
   };
-  registerServiceWorker();
   // B2. TODO - Listen for the 'load' event on the window object.
   window.addEventListener("load", (event) => {
     registerServiceWorker();
